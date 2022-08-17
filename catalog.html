@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#10cfe6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Главная страница сайта</title>
+    <link rel="yandex-tableau-widget" href="./images/favicons/yandex-browser-manifest.json">
+    <link rel="stylesheet" href="./css/main.css"><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="homepage">
+    <header class="header"> 
+      <div class="header__top">
+        <div class="outer">
+          <div class="inner">
+            <div class="header__top-container">
+              <div class="address"> 
+                <svg class="icon icon-location ">
+                  <use xlink:href="./images/sprite.svg#location"></use>
+                </svg>Краснодар, ул. Тургенева, д. 61<span>Пн-Вс: 10:00 - 19:00</span>
+              </div>
+              <div class="measurer">
+                <svg class="icon icon-ruler ">
+                  <use xlink:href="./images/sprite.svg#ruler"></use>
+                </svg><a href="#" data-id="measurer"> Вызвать замерщика</a>
+              </div>
+              <div class="mail"><a href="mailto: shop@b-les-krd.ru" data-id="measurer">shop@b-les-krd.ru<span>пишите по всем вопросам</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="outer">
+        <div class="inner">
+          <div class="header__center">
+            <div class="header__logo"> <a class="logo" href="/">
+                <svg class="icon icon-logo ">
+                  <use xlink:href="./images/sprite.svg#logo"></use>
+                </svg>БрянскийЛес<span>Межкомнатные и входные двери от производителя</span></a></div>
+            <div class="search">
+              <div class="search__input">
+                <input type="text" placeholder="Поиск по каталогу ..." required>
+              </div>
+              <button class="search-btn">
+                <svg class="icon icon-search ">
+                  <use xlink:href="./images/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div><a href="tel: 89384088895">8 (938) 408-88-95</a>
+            <button data-id="callme">Заказать звонок</button>
+            <button class="burger burger-js"><span></span></button>
+          </div>
+          <div class="header__bottom mainmenu--js">
+            <nav>
+              <ul> 
+                <li data-id="catalog">
+                   <svg width="20" height="4" viewBox="0 0 20 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 4C3.10457 4 4 3.10457 4 2C4 0.89543 3.10457 0 2 0C0.89543 0 0 0.89543 0 2C0 3.10457 0.89543 4 2 4Z"/>
+<path d="M10 4C11.1046 4 12 3.10457 12 2C12 0.89543 11.1046 0 10 0C8.89543 0 8 0.89543 8 2C8 3.10457 8.89543 4 10 4Z"/>
+<path d="M18 4C19.1046 4 20 3.10457 20 2C20 0.89543 19.1046 0 18 0C16.8954 0 16 0.89543 16 2C16 3.10457 16.8954 4 18 4Z"/>
+</svg>Каталог
+                  <div class="header__bottom-catalog">
+                    <ul> 
+                      <li data-id="submenu"><a href="#">Межкомнатные двери</a>
+                        <div class="header__bottom-submenu"> 
+                          <div class="header__bottom-submenu-container">
+                            <div class="header__bottom-submenu-leftside"> 
+                              <ul> 
+                                <li>Материал изготовления</li>
+                                <li><a href="#">Финиш Флекс</a></li>
+                                <li><a href="#">Хард Флекс</a></li>
+                                <li><a href="#">Шпонированные</a></li>
+                                <li><a href="#">Из массива</a></li>
+                                <li><a href="#">CPL</a></li>
+                                <li><a href="#">ПВХ-плёнка</a></li>
+                                <li><a href="#">Эмалит</a></li>
+                                <li><a href="#">Эмаль</a></li>
+                              </ul>
+                              <ul>
+                                <li>Ценовой сегмент</li>
+                                <li><a href="#">от 10 000р. до 20 000р.</a></li>
+                                <li><a href="#">от 19 000р. до 30 000р.</a></li>
+                                <li><a href="#">от 30 000р.</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li data-id="submenu"> <a href="#">Входные двери</a>
+                        <div class="header__bottom-submenu"> 
+                          <div class="header__bottom-submenu-container">
+                            <div class="header__bottom-submenu-leftside"> 
+                              <ul> 
+                                <li>Материал изготовления</li>
+                                <li><a href="#">Финиш Флекс</a></li>
+                                <li><a href="#">Хард Флекс</a></li>
+                                <li><a href="#">Шпонированные</a></li>
+                                <li><a href="#">Из массива</a></li>
+                                <li><a href="#">CPL</a></li>
+                                <li><a href="#">ПВХ-плёнка</a></li>
+                                <li><a href="#">Эмалит</a></li>
+                                <li><a href="#">Эмаль</a></li>
+                              </ul>
+                              <ul>
+                                <li>Ценовой сегмент</li>
+                                <li><a href="#">от 10 000р. до 20 000р.</a></li>
+                                <li><a href="#">от 19 000р. до 30 000р.</a></li>
+                                <li><a href="#">от 30 000р.</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li> <a href="#">Раздвижные двери</a></li>
+                      <li> <a href="#">Конструкции с фрамугами</a></li>
+                      <li> <a href="#">Перегородки</a></li>
+                      <li> <a href="#">Ручки</a></li>
+                      <li> <a href="#">Добор-панели</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li data-id="submenu"><a href="#">
+                    <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.29785 10.9148H8.08508V11.7233H9.29785V10.9148Z"/>
+<path d="M19 21.0212H16.5745V1.96464C16.5745 1.76736 16.4318 1.59879 16.2369 1.56604L6.93904 0.00561934C6.82221 -0.0141892 6.70215 0.0189598 6.61119 0.0957683C6.52023 0.172577 6.46809 0.285364 6.46809 0.404215V0.80847H2.42553C2.20198 0.80847 2.02128 0.989577 2.02128 1.21273V21.4255H0V22.234H2.42553H6.46809V22.6383C6.46809 22.7543 6.51781 22.8646 6.60513 22.9414C6.67951 23.0069 6.77451 23.0425 6.87234 23.0425C6.88892 23.0425 6.90589 23.0417 6.92287 23.0393L16.2207 21.869C16.2652 21.8633 16.306 21.8483 16.3449 21.8293H19V21.0212ZM2.82979 21.4255V1.61698H6.46809V21.4255H2.82979ZM7.2766 21.8297V21.4255V1.21273V0.882045L15.766 2.30664V21.0212V21.1118L7.2766 22.1802V21.8297Z"/>
+</svg>Межкомнатные двери</a>
+                  <div class="header__bottom-submenu"> 
+                    <div class="header__bottom-submenu-container">
+                      <div class="header__bottom-submenu-leftside"> 
+                        <ul> 
+                          <li>Материал изготовления</li>
+                          <li><a href="#">Финиш Флекс</a></li>
+                          <li><a href="#">Хард Флекс</a></li>
+                          <li><a href="#">Шпонированные</a></li>
+                          <li><a href="#">Из массива</a></li>
+                          <li><a href="#">CPL</a></li>
+                          <li><a href="#">ПВХ-плёнка</a></li>
+                          <li><a href="#">Эмалит</a></li>
+                          <li><a href="#">Эмаль</a></li>
+                        </ul>
+                        <ul>
+                          <li>Ценовой сегмент</li>
+                          <li><a href="#">от 10 000р. до 20 000р.</a></li>
+                          <li><a href="#">от 19 000р. до 30 000р.</a></li>
+                          <li><a href="#">от 30 000р.</a></li>
+                        </ul>
+                      </div>
+                      <div class="header__bottom-submenu-rightside">
+                        <div class="popular__model-title">Популярная модель</div>
+                        <div class="model__content"> <img src="/images/door/legenda22.png" alt="Легенда-22">
+                          <div class="model__info"> 
+                            <div class="model__label">Хит продаж</div>
+                            <div class="model__name">Дверь межкомнатная остеклённая Легенда-22</div>
+                            <div class="model__size">80x200 см</div>
+                            <div class="model__stars" data-stars="5.0" data-id="stars"></div>
+                            <div class="model__bottom">
+                              <div class="price price_mini"> 
+                                <div class="price__old">9 500р.</div>
+                                <div class="price__new">8 210р.</div>
+                              </div>
+                              <button data-id="openmodal">Купить&nbsp;&nbsp;&nbsp;+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li data-id="submenu"><a href="#">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.21504 22.4004C9.1326 22.4004 9.05355 22.3677 8.99526 22.3094C8.93697 22.2511 8.90422 22.172 8.90422 22.0896V0.954459C8.90401 0.91089 8.91295 0.867763 8.93048 0.827874C8.948 0.787985 8.97372 0.752227 9.00596 0.722919C9.0382 0.693612 9.07624 0.671409 9.11761 0.657753C9.15898 0.644096 9.20277 0.639291 9.24612 0.643648L19.1703 1.64757C19.2472 1.6553 19.3185 1.69143 19.3703 1.7489C19.422 1.80637 19.4504 1.88106 19.45 1.95838V17.5756C19.45 17.658 19.4173 17.7371 19.359 17.7954C19.3007 17.8537 19.2217 17.8864 19.1392 17.8864C19.0568 17.8864 18.9777 17.8537 18.9194 17.7954C18.8612 17.7371 18.8284 17.658 18.8284 17.5756V2.23935L9.52585 1.29822V21.7337L18.8284 20.4734V15.3885C18.8284 15.3061 18.8612 15.227 18.9194 15.1687C18.9777 15.1104 19.0568 15.0777 19.1392 15.0777C19.2217 15.0777 19.3007 15.1104 19.359 15.1687C19.4173 15.227 19.45 15.3061 19.45 15.3885V20.7438C19.45 20.819 19.4228 20.8916 19.3734 20.9482C19.3239 21.0049 19.2557 21.0416 19.1812 21.0518L9.25699 22.3976C9.24309 22.3995 9.22907 22.4004 9.21504 22.4004Z" stroke-width="0.1"/>
+<path d="M4.60851 21.2522C4.52608 21.2522 4.44702 21.2195 4.38873 21.1612C4.33044 21.1029 4.2977 21.0238 4.2977 20.9414V1.94899C4.2977 1.86656 4.33044 1.78751 4.38873 1.72922C4.44702 1.67093 4.52608 1.63818 4.60851 1.63818H9.21473C9.29716 1.63818 9.37621 1.67093 9.4345 1.72922C9.49279 1.78751 9.52554 1.86656 9.52554 1.94899C9.52554 2.03143 9.49279 2.11048 9.4345 2.16877C9.37621 2.22706 9.29716 2.25981 9.21473 2.25981H4.91932V20.9414C4.91932 21.0238 4.88657 21.1029 4.82829 21.1612C4.77 21.2195 4.69094 21.2522 4.60851 21.2522Z" stroke-width="0.1"/>
+<path d="M6.36397 21.2522C6.28154 21.2522 6.20248 21.2194 6.1442 21.1612C6.08591 21.1029 6.05316 21.0238 6.05316 20.9414V3.76442C6.05316 3.68199 6.08591 3.60294 6.1442 3.54465C6.20248 3.48636 6.28154 3.45361 6.36397 3.45361H9.21255C9.29499 3.45361 9.37404 3.48636 9.43233 3.54465C9.49062 3.60294 9.52336 3.68199 9.52336 3.76442C9.52336 3.84686 9.49062 3.92591 9.43233 3.9842C9.37404 4.04249 9.29499 4.07523 9.21255 4.07523H6.67478V20.9414C6.67478 21.0238 6.64204 21.1029 6.58375 21.1612C6.52546 21.2194 6.4464 21.2522 6.36397 21.2522Z" stroke-width="0.1"/>
+<path d="M9.21255 21.2522H1.31081C1.22838 21.2522 1.14932 21.2195 1.09103 21.1612C1.03275 21.1029 1 21.0239 1 20.9414C1 20.859 1.03275 20.7799 1.09103 20.7216C1.14932 20.6634 1.22838 20.6306 1.31081 20.6306H9.21255C9.29499 20.6306 9.37404 20.6634 9.43233 20.7216C9.49062 20.7799 9.52337 20.859 9.52337 20.9414C9.52337 21.0239 9.49062 21.1029 9.43233 21.1612C9.37404 21.2195 9.29499 21.2522 9.21255 21.2522Z" stroke-width="0.1"/>
+<path d="M22.4155 21.2522H17.6576C17.5752 21.2522 17.4961 21.2195 17.4378 21.1612C17.3795 21.1029 17.3468 21.0239 17.3468 20.9414C17.3468 20.859 17.3795 20.7799 17.4378 20.7216C17.4961 20.6634 17.5752 20.6306 17.6576 20.6306H22.4155C22.4979 20.6306 22.577 20.6634 22.6353 20.7216C22.6936 20.7799 22.7263 20.859 22.7263 20.9414C22.7263 21.0239 22.6936 21.1029 22.6353 21.1612C22.577 21.2195 22.4979 21.2522 22.4155 21.2522Z" stroke-width="0.1"/>
+<path d="M11.3721 12.6452C11.1499 12.6452 10.9327 12.5793 10.748 12.4559C10.5633 12.3325 10.4193 12.1571 10.3343 11.9518C10.2493 11.7466 10.227 11.5207 10.2704 11.3028C10.3137 11.0849 10.4207 10.8848 10.5778 10.7277C10.7349 10.5706 10.935 10.4636 11.1529 10.4203C11.3708 10.3769 11.5967 10.3992 11.8019 10.4842C12.0072 10.5692 12.1826 10.7132 12.306 10.8979C12.4295 11.0826 12.4953 11.2998 12.4953 11.522C12.495 11.8198 12.3766 12.1053 12.166 12.3159C11.9554 12.5264 11.6699 12.6449 11.3721 12.6452ZM11.3721 11.0203C11.2728 11.0203 11.1759 11.0497 11.0934 11.1048C11.0109 11.16 10.9466 11.2383 10.9086 11.33C10.8706 11.4216 10.8607 11.5225 10.8801 11.6198C10.8994 11.7171 10.9472 11.8065 11.0173 11.8767C11.0875 11.9468 11.1769 11.9946 11.2742 12.014C11.3715 12.0333 11.4724 12.0234 11.564 11.9854C11.6557 11.9474 11.734 11.8831 11.7892 11.8007C11.8443 11.7182 11.8737 11.6212 11.8737 11.522C11.8735 11.389 11.8206 11.2615 11.7266 11.1674C11.6326 11.0734 11.5051 11.0205 11.3721 11.0203Z" stroke-width="0.1"/>
+</svg>Входные двери</a>
+                  <div class="header__bottom-submenu"> 
+                    <div class="header__bottom-submenu-container">
+                      <div class="header__bottom-submenu-leftside"> 
+                        <ul> 
+                          <li>Материал изготовления</li>
+                          <li><a href="#">Финиш Флекс</a></li>
+                          <li><a href="#">Хард Флекс</a></li>
+                          <li><a href="#">Шпонированные</a></li>
+                          <li><a href="#">Из массива</a></li>
+                          <li><a href="#">CPL</a></li>
+                          <li><a href="#">ПВХ-плёнка</a></li>
+                          <li><a href="#">Эмалит</a></li>
+                          <li><a href="#">Эмаль</a></li>
+                        </ul>
+                        <ul>
+                          <li>Ценовой сегмент</li>
+                          <li><a href="#">от 10 000р. до 20 000р.</a></li>
+                          <li><a href="#">от 19 000р. до 30 000р.</a></li>
+                          <li><a href="#">от 30 000р.</a></li>
+                        </ul>
+                      </div>
+                      <div class="header__bottom-submenu-rightside">
+                        <div class="popular__model-title">Популярная модель</div>
+                        <div class="model__content"><img src="/images/door/legenda22.png" alt="Легенда-22">
+                          <div class="model__info"> 
+                            <div class="model__label">Хит продаж</div>
+                            <div class="model__name">Дверь межкомнатная остеклённая Легенда-22</div>
+                            <div class="model__size">80x200 см</div>
+                            <div class="model__stars" data-stars="5.0" data-id="stars"></div>
+                            <div class="model__bottom">
+                              <div class="price price_mini"> 
+                                <div class="price__old">9 500р.</div>
+                                <div class="price__new">8 210р.</div>
+                              </div>
+                              <button data-id="openmodal">Купить&nbsp;&nbsp;&nbsp;+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li> <a href="#">Перегородки</a></li>
+                <li> <a href="#">Ручки</a></li>
+                <li> <a href="#">Клиентам</a></li>
+                <li> <a href="#">Контакты</a></li>
+                <li>
+                  <button data-id="search">
+                    <svg class="icon icon-search ">
+                      <use xlink:href="./images/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <div class="search">
+                <div class="search__input">
+                  <input type="text" placeholder="Поискать по названию или артиклу ..." required>
+                </div>
+                <button class="search-btn">
+                  <svg class="icon icon-search ">
+                    <use xlink:href="./images/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <button data-id="search-close-btn"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.62017 4.00551L8.86017 0.765508C8.93298 0.680485 8.97103 0.571118 8.96671 0.459262C8.96239 0.347406 8.91602 0.241299 8.83687 0.162146C8.75771 0.0829931 8.65161 0.036623 8.53975 0.0323024C8.4279 0.0279819 8.31853 0.0660293 8.23351 0.138841L4.99351 3.37884L1.75351 0.134396C1.66848 0.0615847 1.55912 0.0235378 1.44726 0.0278583C1.3354 0.0321788 1.2293 0.0785486 1.15014 0.157702C1.07099 0.236855 1.02462 0.342961 1.0203 0.454817C1.01598 0.566673 1.05403 0.67604 1.12684 0.761063L4.36684 4.00551L1.12239 7.24551C1.07587 7.28535 1.03808 7.33438 1.0114 7.38952C0.984728 7.44466 0.969736 7.50472 0.967372 7.56593C0.965008 7.62714 0.975322 7.68817 0.997666 7.74521C1.02001 7.80224 1.0539 7.85404 1.09722 7.89735C1.14053 7.94067 1.19233 7.97456 1.24936 7.9969C1.30639 8.01925 1.36743 8.02956 1.42864 8.0272C1.48985 8.02483 1.54991 8.00984 1.60505 7.98316C1.66019 7.95649 1.70922 7.9187 1.74906 7.87217L4.99351 4.63217L8.23351 7.87217C8.31853 7.94499 8.4279 7.98303 8.53975 7.97871C8.65161 7.97439 8.75771 7.92802 8.83687 7.84887C8.91602 7.76972 8.96239 7.66361 8.96671 7.55175C8.97103 7.4399 8.93298 7.33053 8.86017 7.24551L5.62017 4.00551Z"/>
+</svg>
+                </button>
+              </div><a href="tel: 89384088895">8 (938) 408-88-95</a>
+              <button data-id="callme">Заказать звонок</button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="outer">
+        <div class="inner">
+          <div class="breadcrumbs">
+            <ul> 
+              <li><a href="#">Главная</a></li>
+              <li>Межкомнатные двери</li>
+            </ul>
+            <button>Вернуться назад</button>
+          </div>
+        </div>
+      </div>
+      <div class="outer"> 
+        <div class="inner"> 
+          <div class="catalog"> 
+            <h1>Межкомнатные двери</h1>
+            <ul> 
+              <li>Показать:</li>
+              <li><a class="_active" href="#">Все</a></li>
+              <li><a href="#">Популярные</a></li>
+              <li><a href="#">Подешевле</a></li>
+              <li> <a href="#">Подороже</a></li>
+              <li><a href="#">По акции</a></li>
+              <li> <a href="#">Белые</a></li>
+              <li> <a href="#">Массив</a></li>
+              <li> 
+                <div class="form__checkbox">
+                  <input type="checkbox" id="nalichie">
+                  <label for="nalichie">Показать из наличия</label>
+                </div>
+              </li>
+            </ul>
+            <div class="catalog__content"> <a class="slider__slide" href="#">
+                <div class="model__content model__content_vertical"><img src="/images/door/image1.png" alt="Легенда-22">
+                  <div class="model__info">
+                    <div class="model__label"></div>
+                    <div class="model__name">Дверь межкомнатная остеклённая Легенда-22</div>
+                    <div class="model__size">80x200 см</div>
+                    <div class="model__stars" data-stars="5.0" data-id="stars"></div>
+                    <div class="model__bottom">
+                      <div class="price price_mini"> 
+                        <div class="price__old">9 500р.</div>
+                        <div class="price__new">3 993р.</div>
+                      </div>
+                      <div class="model__nal">Наличие: <span>в наличии</span></div>
+                      <div class="model__material">Материал:<span>экошпон</span></div>
+                      <button data-id="openmodal"> 
+                        <p>Купить</p>
+                      </button>
+                    </div>
+                  </div>
+                </div></a><a class="slider__slide" href="#">
+                <div class="model__content model__content_vertical"><img src="/images/door/image1.png" alt="Легенда-22">
+                  <div class="model__info">
+                    <div class="model__label"></div>
+                    <div class="model__name">Дверь межкомнатная остеклённая Легенда-22</div>
+                    <div class="model__size">80x200 см</div>
+                    <div class="model__stars" data-stars="5.0" data-id="stars"></div>
+                    <div class="model__bottom">
+                      <div class="price price_mini"> 
+                        <div class="price__old">9 500р.</div>
+                        <div class="price__new">3 993р.</div>
+                      </div>
+                      <div class="model__nal">Наличие: <span>в наличии</span></div>
+                      <div class="model__material">Материал:<span>экошпон</span></div>
+                      <button data-id="openmodal"> 
+                        <p>Купить</p>
+                      </button>
+                    </div>
+                  </div>
+                </div></a><a class="slider__slide" href="#">
+                <div class="model__content model__content_vertical"><img src="/images/door/image1.png" alt="Легенда-22">
+                  <div class="model__info">
+                    <div class="model__label"></div>
+                    <div class="model__name">Дверь межкомнатная остеклённая Легенда-22</div>
+                    <div class="model__size">80x200 см</div>
+                    <div class="model__stars" data-stars="5.0" data-id="stars"></div>
+                    <div class="model__bottom">
+                      <div class="price price_mini"> 
+                        <div class="price__old">9 500р.</div>
+                        <div class="price__new">3 993р.</div>
+                      </div>
+                      <div class="model__nal">Наличие: <span>в наличии</span></div>
+                      <div class="model__material">Материал:<span>экошпон</span></div>
+                      <button data-id="openmodal"> 
+                        <p>Купить</p>
+                      </button>
+                    </div>
+                  </div>
+                </div></a><a class="slider__slide" href="#">
+                <div class="model__content model__content_vertical"><img src="/images/door/image1.png" alt="Легенда-22">
+                  <div class="model__info">
+                    <div class="model__label"></div>
+                    <div class="model__name">Дверь межкомнатная остеклённая Легенда-22</div>
+                    <div class="model__size">80x200 см</div>
+                    <div class="model__stars" data-stars="5.0" data-id="stars"></div>
+                    <div class="model__bottom">
+                      <div class="price price_mini"> 
+                        <div class="price__old">9 500р.</div>
+                        <div class="price__new">3 993р.</div>
+                      </div>
+                      <div class="model__nal">Наличие: <span>в наличии</span></div>
+                      <div class="model__material">Материал:<span>экошпон</span></div>
+                      <button data-id="openmodal"> 
+                        <p>Купить</p>
+                      </button>
+                    </div>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+      <section class="feedback">
+        <div class="outer">
+          <div class="inner"> 
+            <div class="review"> 
+              <div class="review__content"> 
+                <h2 class="title title_green review__title">Наши клиенты остаются довольны на <span>100%</span></h2>
+                <p>Мы не даём обещаний, которые не можем выполнить. Мы выполняем все наши обещания!</p>
+                <div class="popular__model-stars" data-stars="4.9" data-id="stars" data-text="средняя оценка"></div><a href="#">Написать отзыв</a>
+              </div>
+              <div class="review__slider review__slider-js">
+                <button class="slider__btn review__slider-btn review__slider-prev-btn-js"><svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7272 12.0411L6 11.7706L0.545403 6.35693L6 0.943274L5.7272 0.672716L4.96929e-07 6.35693L5.7272 12.0411Z"/>
+</svg>
+                </button>
+                <button class="slider__btn slider__btn-next review__slider-btn review__slider-next-btn-js"><svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7272 12.0411L6 11.7706L0.545403 6.35693L6 0.943274L5.7272 0.672716L4.96929e-07 6.35693L5.7272 12.0411Z"/>
+</svg>
+                </button>
+                <div class="review__wrapper swiper-wrapper"> 
+                  <div class="swiper-slide">
+                    <div class="review__decor"> 
+                      <svg class="icon icon-quote ">
+                        <use xlink:href="./images/sprite.svg#quote"></use>
+                      </svg>
+                    </div>
+                    <div class="review__top">
+                      <div class="review__name">Виктория<span>Московская область</span></div>
+                      <div class="review__date">Опубликовано вчера 18:00</div>
+                    </div>
+                    <div class="review__content">
+                      <p>У древних славян дверь несла в себе символику границы и смысл входа и выхода. </p>
+                      <p>В отличие от ворот, дверь представляла собой границу жилого пространства и осуществляла его связь ...</p>
+                    </div>
+                    <div class="review__photos"><img src="/images/photo1.jpg" alt="photo 1"><img src="/images/photo2.jpg" alt="photo 2"><img src="/images/photo3.jpg" alt="photo 3"></div>
+                    <div class="review__bottom"> 
+                      <div class="popular__model-stars" data-stars="5.0" data-id="stars">   </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review__decor"> 
+                      <svg class="icon icon-quote ">
+                        <use xlink:href="./images/sprite.svg#quote"></use>
+                      </svg>
+                    </div>
+                    <div class="review__top">
+                      <div class="review__name">Виктория<span>Московская область</span></div>
+                      <div class="review__date">Опубликовано вчера 18:00</div>
+                    </div>
+                    <div class="review__content">
+                      <p>У древних славян дверь несла в себе символику границы и смысл входа и выхода. </p>
+                      <p>В отличие от ворот, дверь представляла собой границу жилого пространства и осуществляла его связь ...</p>
+                    </div>
+                    <div class="review__photos"><img src="/images/photo1.jpg" alt="photo 1"><img src="/images/photo2.jpg" alt="photo 2"><img src="/images/photo3.jpg" alt="photo 3"></div>
+                    <div class="review__bottom"> 
+                      <div class="popular__model-stars" data-stars="5.0" data-id="stars"> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="outer">
+        <div class="inner">
+          <div class="footer__container">
+            <div class="footer__logo"> <a class="logo" href="/">
+                <svg class="icon icon-logo ">
+                  <use xlink:href="./images/sprite.svg#logo"></use>
+                </svg>БрянскийЛес<span>Межкомнатные и входные двери от производителя</span></a></div>
+            <div class="footer__contacts"> 
+              <div class="address"> 
+                <svg class="icon icon-location ">
+                  <use xlink:href="./images/sprite.svg#location"></use>
+                </svg>Краснодар, ул. Тургенева, д. 61<span>Пн-Вс: 10:00 - 19:00</span>
+              </div>
+              <div class="measurer">
+                <svg class="icon icon-ruler ">
+                  <use xlink:href="./images/sprite.svg#ruler"></use>
+                </svg><a href="#" data-id="measurer"> Вызвать замерщика</a>
+              </div>
+              <div class="phone"><a href="tel:89384088895">8 (938) 408-88-95</a><a href="tel:89183646995">8 (918) 364-69-95</a></div>
+              <button data-id="callme">Заказать звонок</button>
+            </div>
+            <div class="footer__nav"> 
+              <ul> 
+                <li>Категории</li>
+                <li> <a href="#">Межкомнатные двери</a></li>
+                <li> <a href="#">Фурнитура</a></li>
+                <li> <a href="#">Входные двери</a></li>
+                <li> <a href="#">Специальные двери</a></li>
+                <li> <a href="#">Перегородки</a></li>
+              </ul>
+              <ul>
+                <li>О компании</li>
+                <li><a href="#">Производство</a></li>
+                <li><a href="#">Наши магазины</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__copyright">
+              <p>© Брянский лес 2010—2022</p>
+              <p>Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой.</p>
+              <div class="footer__soc"> <a href="#"> 
+                  <svg class="icon icon-instagram ">
+                    <use xlink:href="./images/sprite.svg#instagram"></use>
+                  </svg></a><a href="#"> 
+                  <svg class="icon icon-fb ">
+                    <use xlink:href="./images/sprite.svg#fb"></use>
+                  </svg></a><a href="#"> 
+                  <svg class="icon icon-youtube ">
+                    <use xlink:href="./images/sprite.svg#youtube"></use>
+                  </svg></a><a href="#"> 
+                  <svg class="icon icon-vk ">
+                    <use xlink:href="./images/sprite.svg#vk"></use>
+                  </svg></a></div>
+              <ul> 
+                <li> <a href="#">Обработка персональных данных</a></li>
+                <li> <a href="#">Публичная оферта</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-js">
+      <div class="modal__container modal__container-js">
+        <div class="modal__close-button modal__close-js"></div>
+        <div class="modal__content">
+          <div class="modal__title"></div>
+          <div class="model__content"> <img src="/images/door/legenda22.png" alt="Легенда-22">
+            <div class="model__info">
+              <div class="model__name"></div>
+              <div class="model__size"></div>
+              <div class="model__stars" data-stars="5.0" data-id="stars"></div>
+              <div class="model__bottom">
+                <div class="price"></div>
+              </div>
+            </div>
+          </div>
+          <form class="modal__form">
+            <div class="form__input-container"><span class="_phone">Номер телефона
+                <input type="tel" placeholder="+7" required id="phone">
+                <p> Пожалуйста укажите корректно</p></span></div>
+            <div class="form__input-container"><span>Ваше имя
+                <input type="text" placeholder="" required pattern="^([?:sаА-яЯёЁ]{1,200}|[?:saA-zZ]{1,200}|[s])$">
+                <p> как мы можем к Вам обращаться</p></span></div>
+            <button type="submit">Оформить заказ <span>+</span></button>
+            <div class="form__checkbox">
+              <input type="checkbox" id="true">
+              <label for="true">Нажимая “заказать звонок” я соглашаюсь с Публичной офертой и политикой <a href="#">обработки персональных данных</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><a class="go-top go-top--js" href="#">
+      <svg class="icon icon-up ">
+        <use xlink:href="./images/sprite.svg#up"></use>
+      </svg></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
