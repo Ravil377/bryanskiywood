@@ -1,0 +1,173 @@
+.feedback {
+    padding-bottom: 54px;
+}
+
+.review {
+    // margin-top: 69px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+    .review__content {
+        .review__title {
+            @media (min-width: 992px) {
+                max-width: 583px;
+            }
+        }
+        p {
+            margin: 0;
+            margin-top: 22px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            @media (min-width: 992px) {
+                max-width: 548px;
+            }
+        }
+        .popular__model-stars {
+            margin-top: 30px;
+        }
+        a {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 32px;
+            text-decoration: none;
+            padding: 15px 20px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            display: block;
+            width: fit-content;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 16px;
+            color: #000;
+            cursor: pointer;
+            transition: .4s;
+            @media (min-width: 992px) {
+                margin: 32px 0 0;
+            }
+            &:hover {
+                color: $green;
+                border: 1px solid $green;
+            }
+        }
+    }
+}
+
+.review__slider {
+    max-width: 518px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    @media (min-width: 576px) {
+        padding: 0 53px;
+    }
+    @media (min-width: 992px) {
+        margin: 0;
+        margin-top: 30px;
+    }
+    
+    .review__wrapper {
+        .swiper-slide {
+            border: 1px solid #DCE3E3;
+            border-radius: 10px;
+            padding: 34px 0;
+            padding-bottom: 0;
+            position: relative;
+            .review__decor {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 9px;
+                right: 9px;
+                @media (min-width: 576px) {
+                    top: 9px;
+                    right: 40px;
+                }
+                .icon {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .review__top {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 0 15px;
+                @media (min-width: 576px) {
+                    padding: 0 34px;
+                }
+                .review__name {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #000;
+                    span {
+                        margin-top: 5px;
+                        font-weight: 400;
+                        display: block;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #7E7F81;
+                    }
+                }
+                .review__date {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #7E7F81;
+                }
+            }
+            .review__content {
+                margin-top: 26px;
+                margin-bottom: 18px;
+                padding: 0 15px;
+                @media (min-width: 576px) {
+                    padding: 0 34px;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 120%;
+                }
+            }
+            .review__photos {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+                padding: 0 15px;
+                @media (min-width: 576px) {
+                    padding: 0 34px;
+                }
+                img {
+                    width: 100%;
+                    height: 77px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+            }
+            .review__bottom {
+                margin-top: 26px;
+                border-top: 1px solid #EBEBEB;
+                padding: 0 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;               
+                @media (min-width: 576px) {
+                    padding: 0 34px;
+                    padding-top: 21px;
+                    padding-bottom: 29px;
+                }
+                .popular__model-stars {
+                    margin-top: 0;
+                }
+            }
+        }
+        
+    }
+}

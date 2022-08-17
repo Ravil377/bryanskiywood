@@ -1,0 +1,111 @@
+@use "sass:math";
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-a {
+    width: math.div(10, 8) * 1em;
+}
+.icon-ar {
+    width: math.div(16, 30) * 1em;
+}
+.icon-arrow {
+    width: math.div(20, 8) * 1em;
+}
+.icon-arrow-up {
+    width: math.div(32, 32) * 1em;
+}
+.icon-bottom-arrow {
+    width: math.div(7, 4) * 1em;
+}
+.icon-car {
+    width: math.div(18, 14) * 1em;
+}
+.icon-card {
+    width: math.div(50, 44) * 1em;
+}
+.icon-close {
+    width: math.div(9, 9) * 1em;
+}
+.icon-consultation {
+    width: math.div(18, 17) * 1em;
+}
+.icon-delivery {
+    width: math.div(99, 77) * 1em;
+}
+.icon-dot {
+    width: math.div(20, 4) * 1em;
+}
+.icon-empty {
+    width: math.div(9, 9) * 1em;
+}
+.icon-entrance-doors {
+    width: math.div(23, 23) * 1em;
+}
+.icon-eye {
+    width: math.div(16, 12) * 1em;
+}
+.icon-fb {
+    width: math.div(18, 18) * 1em;
+}
+.icon-ga {
+    width: math.div(10, 8) * 1em;
+}
+.icon-garanty {
+    width: math.div(84, 84) * 1em;
+}
+.icon-instagram {
+    width: math.div(18, 18) * 1em;
+}
+.icon-interior-doors {
+    width: math.div(19, 24) * 1em;
+}
+.icon-location {
+    width: math.div(10, 13) * 1em;
+}
+.icon-logo {
+    width: math.div(49, 49) * 1em;
+}
+.icon-pay {
+    width: math.div(93, 81) * 1em;
+}
+.icon-prev {
+    width: math.div(6, 13) * 1em;
+}
+.icon-quote {
+    width: math.div(40, 40) * 1em;
+}
+.icon-ruler {
+    width: math.div(15, 15) * 1em;
+}
+.icon-scale {
+    width: math.div(15, 13) * 1em;
+}
+.icon-search {
+    width: math.div(17, 17) * 1em;
+}
+.icon-star {
+    width: math.div(9, 9) * 1em;
+}
+.icon-truck {
+    width: math.div(54, 43) * 1em;
+}
+.icon-up {
+    width: math.div(25, 24) * 1em;
+}
+.icon-v {
+    width: math.div(19, 14) * 1em;
+}
+.icon-vk {
+    width: math.div(18, 18) * 1em;
+}
+.icon-warranty {
+    width: math.div(48, 48) * 1em;
+}
+.icon-youtube {
+    width: math.div(18, 18) * 1em;
+}

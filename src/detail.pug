@@ -1,0 +1,127 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Главная страница сайта'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+
+block breadcrumbs
+    .outer
+        .inner
+            .breadcrumbs
+                ul 
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#") Межкомнатные двери
+                    li Межкомнатная дверь «Домино О-1» эмаль
+                button Вернуться назад
+
+block detail 
+    .outer 
+        .inner 
+            .detail
+                .detail__slider.detail__slider-js
+                    .detail__slider-labels 
+                        .model__label.model__label_black Новинка 2022
+                        .model__label Хит продаж
+                    .swiper-wrapper
+                        .swiper-slide.detail__item
+                            img(src='images/door/detail.png' alt='Дверь')
+                        .swiper-slide.detail__item
+                            img(src='images/door/detail.png' alt='Дверь')
+                        .swiper-slide.detail__item
+                            img(src='images/door/detail.png' alt='Дверь')
+                        .swiper-slide.detail__item
+                            img(src='images/door/detail.png' alt='Дверь')
+                        .swiper-slide.detail__item
+                            img(src='images/door/detail.png' alt='Дверь')
+                    button.slider__btn.detail__slider-btn.detail__slider-prev-btn-js
+                        <svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.7272 12.0411L6 11.7706L0.545403 6.35693L6 0.943274L5.7272 0.672716L4.96929e-07 6.35693L5.7272 12.0411Z"/>
+                        </svg>
+                    button.slider__btn.slider__btn-next.detail__slider-btn.detail__slider-next-btn-js
+                        <svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.7272 12.0411L6 11.7706L0.545403 6.35693L6 0.943274L5.7272 0.672716L4.96929e-07 6.35693L5.7272 12.0411Z"/>
+                        </svg>
+                .detail__info 
+                    h1.title Межкомнатная дверь «Домино О-1» эмаль
+                    .detail__top
+                        div(data-id='stars' data-stars='5.0')
+                        p Артикул:
+                            span 569FA336
+                        p 
+                            span 50 человек
+                            | посмотрели эту дверь за сегодня
+                    .detail__center
+                        p Размер полотна: 
+                            span 80х200 см
+                        div 
+                            .price 
+                                .price__old 9 500р.
+                                .price__new 8 210р.
+                                    span -20%
+                                .price__description *Цена — стандартная цена за полотно (в стандартных цветах).
+                            .detail__buttons
+                                button(data-id="callme")._big Консультация
+                                button(data-id="openmodal")._big 
+                                    p Оформить заказ
+                        p Цветовое решение: 
+                            span.color-text-js Серый
+                        .detail__color-tabs
+                            ul.color-tabs-js
+                                li(style="background: #E7EBDA;" data-color="серый")
+                                li(style="background: #ECECEC;" data-color="серый1")
+                                li(style="background: #564B63;" data-color="серый2")
+                                li(style="background: #E4E8D5;" data-color="серый3")
+                                li(style="background: #A79788;" data-color="серый4")
+                                li(style="background: #585858;" data-color="серый5")
+                                li(style="background: #EDEDED;" data-color="серый6")
+                                li(style="background: #564B63;" data-color="серый7")
+                            p Если не нашли нужный цвет, <br>заполните форму 
+                                a(href="#") заказа двери 
+                                | и мы найдем его для Вас
+                        div
+                            a(href="#") 
+                                +icon('scale')
+                                | Размеры полотен
+                            a(href="#") 
+                                +icon('car')
+                                | Доставка и оплаты
+                            button(data-id='consultation') 
+                                +icon('consultation')
+                                | Получить консультацию
+                        div 
+                            h2 Характеристики
+                            .detail__haract 
+                                ul 
+                                    li Серия: 
+                                        span Межкомнатные двери
+                                    li Материал:
+                                        span ПВХ
+                                    li Вид:
+                                        span Глухое
+                                    li Тип: 
+                                        a(href="#") Фрезерованные двери
+                                ul 
+                                    li Стиль: 
+                                        span Классический
+                                    li Размеры:
+                                        span 400,450,500,550,600,650,700,750,800,850,900*1800,1850,1900,1950,2000 мм
+                                    li Внутреннее наполнение:
+                                        span МДФ
+                            h2 Описание
+                            p Глухая межкомнатная дверь «Домино О-1» — компания «Брянский Лес» в г.Краснодар Неувядаемая, универсальная классика
+                        div
+                            ul
+                                li 
+                                    +icon('truck')
+                                    | Доставка бесплатно в <span>Краснодаре</span>
+                                li 
+                                    +icon('warranty')
+                                    | Гарантия 3 года!
+                                li 
+                                    +icon('card')
+                                    | Удобная оплата
+block slider
+    +slider()

@@ -1,0 +1,129 @@
+extends base/pug/base
+include ./components/slider/slider
+include ./components/links/links
+
+append variables
+    - var title = 'Главная страница сайта'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+
+block welcome 
+    .welcome
+        .outer
+            .inner
+                .welcome__container 
+                    .banner
+                        .banner__content
+                            h1 Самые доступные цены 
+                                span по Краснодару
+                            p Мы можем дать гарантию низкой цены на двери из массива
+                            ul.banner__green-line
+                                li бесплатная доставка
+                                li Доставка
+                                li Доступные цены
+                                li скидки
+                                li доступные цены
+                                li доступные цены
+                            ul.banner__black-line
+                                li бесплатная доставка
+                                li Доставка
+                                li скидки
+                                li бесплатная доставка
+                                li доступные цены
+                            img(src='/images/door/banner-door.png' alt="дверь")
+                    a(href="#").popular
+                        .model__content.model__content_vertical
+                            img(src='/images/door/legenda22-1.png' alt="Легенда-22")
+                            .model__info 
+                                .model__label.popular__model-label Хит продаж
+                                .model__name Дверь межкомнатная остеклённая Легенда-22
+                                .model__size 80x200 см
+                                div(data-stars='5.0' data-id='stars').model__stars
+                                .model__bottom
+                                    .price.price_mini 
+                                        .price__old 9 500р.
+                                        .price__new 3 993р.
+                                    button(data-id="openmodal") Купить&nbsp;&nbsp;&nbsp;+
+                ul.benefits
+                    li Двери от производителя
+                    li Гарантия качества
+                    li Доступные цены
+                ul.links
+                    li(style="--bg-1:url(../images/bg1.png);")
+                        img(src="/images/door/door-link1.png" alt='Межкомнатные двери')
+                        .link__content
+                            p Межкомнатные двери
+                            a(href="#") Смотреть
+                    li(style="--bg-1:url(../images/bg2.png);")
+                        img(src="/images/door/door-link2.png" alt='Входные двери')
+                        .link__content
+                            p Входные двери
+                            a(href="#") Смотреть
+                    li(style="--bg-1:url(../images/bg3.png);")
+                        img(src="/images/door/door-link3.png" alt='Аксессуары')
+                        .link__content
+                            p Аксессуары
+                            a(href="#") Смотреть
+                .new-conllection
+                    h2.title.title_year Новые коллекции
+                        span 2022
+                    .new-conllection__content
+                        a(href="#").model__content
+                            img(src='/images/door/collection1.png' alt="Дверь межкомнатная глухая массив")
+                            .model__discount -20%
+                            .model__info 
+                                .model__name Дверь межкомнатная глухая массив дерева цвет натуральный
+                                .model__size 80x200 см
+                                div(data-stars='5.0' data-id='stars').model__stars
+                                .model__bottom
+                                    .price.price_mini 
+                                        .price__old 9 500р.
+                                        .price__new 3 993р.
+                                    button(data-id="openmodal") Купить&nbsp;&nbsp;&nbsp;+
+                        a(href="#").model__content
+                            img(src='/images/door/collection2.png' alt="Межкомнатная глухая массив дерева")
+                            .model__discount -15%
+                            .model__info 
+                                .model__name Межкомнатная глухая массив дерева цвет натуральный
+                                .model__size 80x200 см
+                                div(data-stars='5.0' data-id='stars').model__stars
+                                .model__bottom
+                                    .price.price_mini 
+                                        .price__old 9 500р.
+                                        .price__new 3 993р.
+                                    button(data-id="openmodal") Купить&nbsp;&nbsp;&nbsp;+
+block about
+    .about
+        .outer
+            .inner        
+                .about__container
+                    .about__images 
+                        img(src='/images/image7.png' alt="Фото")
+                        img(src='/images/image8.png' alt="Фото")
+                        img(src='/images/image9.png' alt="Фото")
+                    .about__content
+                        h2.title БрянскийЛес — двери от производителя
+                        p Мы не даём обещаний, которые не можем выполнить. Мы выполняем все наши обещания и обязательства, независимо от обстоятельств. Каждый из наших сотрудников действует с целью сохранения и повышения репутации компании.
+                        p Дверь — проём, закрываемый выпускающе-впускающей преградой. В том числе камнем, закрывающим вход в пещеру.
+                        p У древних славян дверь несла в себе символику границы и смысл входа и выхода. В отличие от ворот, дверь представляла собой границу жилого пространства и осуществляла его связь со внешним миром (когда была открыта), а также — защиту от него (когда была закрыта).
+                            span Дверь — створ или несколько створов, закрывающих проём в стене для входа и выхода из здания, помещения, или проём 
+                        h3 Производство
+                        p Слово дверь иногда применяют в аналогизирующих переносах, в которых в качестве отверстия дверь присутствует в анатомическом коде человека: в уподоблении глазам
+                        p.about__work-date 
+                            | 1995
+                            span Работаем с 1995 года
+                .about__bonus 
+                    ul
+                        li Качественная доставка
+                            span Доставим двери до вашего дома без повреждений
+                            +icon('delivery')
+                        li Гарантия 3 года!
+                            span Гарантия на межкомнатные двери - 3 года!
+                            +icon('garanty')
+                        li Удобная оплата
+                            span Опытные менеджеры ответят на все ваши вопросы
+                            +icon('pay')
+block slider
+    +slider()
+block links
+    +links()

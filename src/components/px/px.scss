@@ -1,0 +1,154 @@
+:root
+{ --base-line: 24px;
+  --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  --l¼: calc(var(--base-line) / 4);
+  --l½: calc(var(--base-line) / 2);
+  --l2: calc(var(--base-line) * 2);
+  --l3: calc(var(--base-line) * 3);
+  --l4: calc(var(--base-line) * 4); }
+
+
+html
+{ box-sizing: border-box; }
+
+
+*, *:before, *:after
+{ box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+
+body, button, input, select, table, textarea
+{ font-family: var(--system-font);
+  font-size: 16px;
+  cursor: default; }
+
+
+body, table, textarea
+{ line-height: 1.5; }
+
+
+body
+{ word-wrap: break-word;
+  overflow-wrap: break-word; }
+
+
+h1, h2, h3, h4, h5, h6
+{ font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+
+a:link, a:visited
+{ text-decoration: none;
+  color: var(--link-color, currentColor); }
+
+
+a:hover, a:focus
+{ text-decoration: underline; }
+
+
+b, strong
+{ font-weight: bolder; }
+
+
+*+h1, *+h2, *+h3, *+h4, *+h5, *+h6, *+.§§
+{ margin-top: var(--l2); }
+
+
+h1+h1, h1+h2, h1+h3, h1+h4, h1+h5, h1+h6,
+h2+h2, h2+h3, h2+h4, h2+h5, h2+h6,
+h3+h3, h3+h4, h3+h5, h3+h6,
+h4+h4, h4+h5, h4+h6,
+h5+h5, h5+h6,
+*+p, *+.§,
+*+ol, *+ul, *+dl,
+*+table, *+figure, *+details,
+*+form, *+hr, *+pre, *+address, *+blockquote,
+*+iframe
+{ margin-top: var(--base-line); }
+
+
+.∨ + *, * + .∧
+{ margin-top: 0; }
+
+
+img, svg, canvas, audio, video, input, button, select, table, textarea
+{ max-width: 100%; }
+
+
+button
+{ user-select: none; }
+
+
+sub, sup
+{ font-size: 75%;
+  position: relative;
+  vertical-align: baseline; }
+
+
+sub
+{ bottom: -0.25em; }
+
+
+sup
+{ top: -0.5em; }
+
+
+sub, sup,
+button, input,
+small, code, kbd, samp
+{ line-height: 1; }
+
+
+hr
+{ border: none;
+  border-top: solid 1px; }
+
+
+hr
+{ margin-bottom: -1px; }
+
+
+table
+{ border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%; }
+
+
+caption
+{ padding: var(--l½); }
+
+
+ol, ul
+{ list-style-position: inside;
+  padding: 0; }
+
+
+dd, li li
+{ margin-left: var(--l); }
+
+
+dd+dt
+{ margin-top: var(--l½); }
+
+
+progress
+{ width:100%; }
+
+
+main,
+header,
+section
+{ display: block; }
+
+
+address
+{ font-style: normal; }
+
+
+:not(.∨) + .§¼ { margin-top: var(--l¼); }
+:not(.∨) + .§½ { margin-top: var(--l½); }
+:not(.∨) + .§2 { margin-top: var(--l2); }
+:not(.∨) + .§3 { margin-top: var(--l3); }
+:not(.∨) + .§4 { margin-top: var(--l4); }

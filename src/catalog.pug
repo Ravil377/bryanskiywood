@@ -1,0 +1,115 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Главная страница сайта'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+
+block breadcrumbs
+    .outer
+        .inner
+            .breadcrumbs
+                ul 
+                    li
+                        a(href="#") Главная
+                    li Межкомнатные двери
+                button Вернуться назад
+
+block catalog 
+    .outer 
+        .inner 
+            .catalog 
+                h1 Межкомнатные двери
+                ul 
+                    li Показать:
+                    li
+                        a(href="#")._active Все
+                    li
+                        a(href="#") Популярные
+                    li
+                        a(href="#") Подешевле
+                    li 
+                        a(href="#") Подороже
+                    li
+                        a(href="#") По акции
+                    li 
+                        a(href="#") Белые
+                    li 
+                        a(href="#") Массив
+                    li 
+                        .form__checkbox
+                            input(type="checkbox" id="nalichie")
+                            label(for="nalichie") Показать из наличия
+                .catalog__content 
+                    a(href="#").slider__slide
+                        .model__content.model__content_vertical
+                            img(src='/images/door/image1.png' alt="Легенда-22")
+                            .model__info
+                                .model__label
+                                .model__name Дверь межкомнатная остеклённая Легенда-22
+                                .model__size 80x200 см
+                                div(data-stars='5.0' data-id='stars').model__stars
+                                .model__bottom
+                                    .price.price_mini 
+                                        .price__old 9 500р.
+                                        .price__new 3 993р.
+                                    .model__nal Наличие: 
+                                        span в наличии
+                                    .model__material Материал:
+                                        span экошпон
+                                    button(data-id="openmodal")  
+                                        p Купить
+                    a(href="#").slider__slide
+                        .model__content.model__content_vertical
+                            img(src='/images/door/image1.png' alt="Легенда-22")
+                            .model__info
+                                .model__label
+                                .model__name Дверь межкомнатная остеклённая Легенда-22
+                                .model__size 80x200 см
+                                div(data-stars='5.0' data-id='stars').model__stars
+                                .model__bottom
+                                    .price.price_mini 
+                                        .price__old 9 500р.
+                                        .price__new 3 993р.
+                                    .model__nal Наличие: 
+                                        span в наличии
+                                    .model__material Материал:
+                                        span экошпон
+                                    button(data-id="openmodal")  
+                                        p Купить
+                    a(href="#").slider__slide
+                        .model__content.model__content_vertical
+                            img(src='/images/door/image1.png' alt="Легенда-22")
+                            .model__info
+                                .model__label
+                                .model__name Дверь межкомнатная остеклённая Легенда-22
+                                .model__size 80x200 см
+                                div(data-stars='5.0' data-id='stars').model__stars
+                                .model__bottom
+                                    .price.price_mini 
+                                        .price__old 9 500р.
+                                        .price__new 3 993р.
+                                    .model__nal Наличие: 
+                                        span в наличии
+                                    .model__material Материал:
+                                        span экошпон
+                                    button(data-id="openmodal")  
+                                        p Купить
+                    a(href="#").slider__slide
+                        .model__content.model__content_vertical
+                            img(src='/images/door/image1.png' alt="Легенда-22")
+                            .model__info
+                                .model__label
+                                .model__name Дверь межкомнатная остеклённая Легенда-22
+                                .model__size 80x200 см
+                                div(data-stars='5.0' data-id='stars').model__stars
+                                .model__bottom
+                                    .price.price_mini 
+                                        .price__old 9 500р.
+                                        .price__new 3 993р.
+                                    .model__nal Наличие: 
+                                        span в наличии
+                                    .model__material Материал:
+                                        span экошпон
+                                    button(data-id="openmodal")  
+                                        p Купить

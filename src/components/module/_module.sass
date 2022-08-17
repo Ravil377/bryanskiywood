@@ -1,0 +1,122 @@
+.top-position
+    position: relative
+    overflow-x: hidden
+    &::before
+        content: ''
+        background: unset
+        @media(min-width: 576px)
+            position: absolute
+            background: url('../images/decor_right.png')
+            background-repeat: no-repeat
+            background-size: cover
+            left: 300px
+            bottom: 0
+            right: unset
+            width: 712px
+            height: 591px
+            z-index: -1
+        @media(min-width: 992px)
+            right: 0
+            left: unset          
+
+.module
+    position: relative
+    min-height: 600px
+    @media(min-width: 400px)
+        min-height: 700px
+    &::before
+        content: ''
+        position: absolute
+        width: 1000px
+        height: 100%
+        left: 200px
+        bottom: 0
+        background: url(../images/background.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position-x: -886px
+        z-index: -3
+        @media(min-width: 992px)
+            right: 0
+            left: unset
+
+    &::after
+        content: ""
+        background: unset
+        @media(min-width: 400px)
+            position: absolute
+            left: 50px
+            bottom: 0
+            width: 824px
+            height: 100%
+            z-index: -2
+            background: url(../images/man.png)
+            background-repeat: no-repeat
+            background-position-x: 116%
+            background-position-y: 134px
+
+        @media(min-width: 576px)
+            left: 100px
+            background-position-x: 84%
+        @media(min-width: 768px)
+            left: 250px
+        @media(min-width: 992px)
+            right: 9vw
+            left: unset
+
+    &__logo
+        max-width: 229px
+        object-fit: contain
+
+    &__date
+        margin-left: 20px
+        font-weight: 700
+        font-size: 18px
+        text-transform: uppercase
+        color: #000000
+        padding: 9px
+        border: 1px solid #000000
+        background-color: #fff9
+        border-radius: 10px
+        span
+            color: #D61F74
+    &__title
+        margin-bottom: 38px
+        background-color: #fff9
+        border-raduis: 5px
+        width: fit-content
+        padding: 0 15px 0 0
+        z-index: 2
+
+        span
+            display: block
+            color: $green
+        .icon-arrow-right
+            margin-bottom: 5px
+            height: 15px
+            width: 22px
+            color: $green
+            @media(min-width: 576px)
+                margin-bottom: 7px
+                height: 28px
+                width: 35px
+    &__address
+        font-weight: 400
+        font-size: 18px
+        line-height: 24px
+        color: $text
+        position: relative
+        background-color: #fff9
+        border-raduis: 5px
+        width: fit-content
+        padding: 0 15px 0 0
+        padding-left: 47px
+        span
+            display: block
+        .icon-location
+            position: absolute
+            left: 0
+            top: 0
+            height: 37px
+            width: 25px
+            color: $green

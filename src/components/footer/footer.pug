@@ -1,0 +1,58 @@
+footer.footer 
+    .outer
+        .inner
+            .footer__container
+                .footer__logo 
+                    include ../logo/logo
+                .footer__contacts 
+                    .address 
+                        +icon('location')
+                        | Краснодар, ул. Тургенева, д. 61
+                        span Пн-Вс: 10:00 - 19:00
+                    .measurer
+                        +icon('ruler')
+                        a(href="#" data-id='measurer')  Вызвать замерщика
+                    .phone
+                        a(href="tel:89384088895") 8 (938) 408-88-95
+                        a(href="tel:89183646995") 8 (918) 364-69-95
+                    button(data-id="callme") Заказать звонок
+                .footer__nav 
+                    ul 
+                        li Категории
+                        li  
+                            a(href="#") Межкомнатные двери
+                        li  
+                            a(href="#") Фурнитура
+                        li  
+                            a(href="#") Входные двери
+                        li  
+                            a(href="#") Специальные двери
+                        li  
+                            a(href="#") Перегородки
+                    ul
+                        li О компании
+                        li
+                            a(href="#") Производство
+                        li
+                            a(href="#") Наши магазины
+                        li
+                            a(href="#") Контакты
+                
+
+                .footer__copyright
+                    p © Брянский лес 2010—2022
+                    p Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой.
+                    .footer__soc 
+                        a(href="#") 
+                            +icon('instagram')
+                        a(href="#") 
+                            +icon('fb')
+                        a(href="#") 
+                            +icon('youtube')
+                        a(href="#") 
+                            +icon('vk')
+                    ul 
+                        li 
+                            a(href="#") Обработка персональных данных
+                        li 
+                            a(href="#") Публичная оферта

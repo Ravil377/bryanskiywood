@@ -1,0 +1,30 @@
+.modal.modal-js
+    .modal__container.modal__container-js
+        .modal__close-button.modal__close-js
+        .modal__content
+            .modal__title
+            .model__content 
+                img(src='/images/door/legenda22.png' alt="Легенда-22")
+                .model__info
+                    .model__name
+                    .model__size
+                    div(data-stars='5.0' data-id='stars').model__stars
+                    .model__bottom
+                        .price
+            form.modal__form
+                .form__input-container
+                    span._phone
+                        | Номер телефона
+                        input(type="tel" placeholder="+7" required id="phone")
+                        p  Пожалуйста укажите корректно
+                .form__input-container
+                    span
+                        | Ваше имя
+                        input(type="text" placeholder="" required pattern="^([?:\sаА-яЯёЁ]{1,200}|[?:\saA-zZ]{1,200}|[\s])$")
+                        p  как мы можем к Вам обращаться
+                button(type="submit") Оформить заказ 
+                    span +
+                .form__checkbox
+                    input(type="checkbox" id="true")
+                    label(for="true") Нажимая “заказать звонок” я соглашаюсь с Публичной офертой и политикой 
+                        a(href="#") обработки персональных данных

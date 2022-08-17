@@ -1,0 +1,37 @@
+include ../../mixins/pug/svg-icon
+include ../../mixins/pug/modal
+include ../../components/slider/slider
+
+block variables
+    -
+        var baseDir = './';
+
+doctype html
+html(lang="ru")
+    //- Include head
+    include ./head
+
+    body(class=pageClass)
+        include ../../components/header/header
+        main.main
+            block breadcrumbs
+            block catalog
+            block welcome 
+            block about
+            block detail
+            //- block bottom
+
+            block slider
+            block links
+            include ../../components/review/review
+        //- Include footer
+        include ../../components/footer/footer
+        include ../../components/modal/modal
+
+        a.go-top.go-top--js(href='#')
+            +icon('up')
+
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src=`${baseDir}js/main.js`)
+
+        block script
